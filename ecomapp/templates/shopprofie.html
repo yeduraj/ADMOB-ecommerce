@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <style>
+        #a,#e,#f{
+        font-size:50px;
+        text-align:justify;
+        color:white;
+    }
+    #b,#c,#d{
+        padding-top:30px;
+        background-color:#b30000;
+        color:white;
+    }
+    body{
+
+    background-image:url({% static 'images/2593207.png' %});
+    background-size:100% 970px;
+
+    }
+    h1{
+    color:#ff8080;
+
+    }
+
+
+.navbar{
+
+
+    }
+    #spn{
+    color:#F49F1C;
+    font-size:23px;
+    }
+    #navc{
+    font-size:30px;
+    }
+
+
+    .navbar a {
+  width: 120px;
+  text-align: center;
+  color: rgb(173, 173, 173);
+}
+
+.nav-link:hover {
+  color: rgb(238, 176, 94);
+
+}
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% load static %}
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark "style="background-color: #242582;">
+  <div class="container-fluid" style="padding-left:3%">
+    <a class="navbar-brand " id='navc' href="http://127.0.0.1:8000/home/">Add<span id="spn">Mob.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <form class="d-flex ms-4 " style="padding-right:5%">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/userlogin/">User Login</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/shoplogin/">Shop Login</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/contactus/">Contact us</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link"  style="color:white;" href="http://127.0.0.1:8000/about/">About</a>
+        </li>
+
+      </ul>
+    </div>
+    </form>
+  </div>
+</nav>
+
+<h1>Welcome ,{{usr}}</h1>
+<div style="margin-top:200px;">
+    <div class="container mt-5"  >
+        <div class="row mt-5">
+            <div class="col-lg-4 col-sm-4 col-md-4">
+                <div class="card" id="b" style="width: 18rem;">
+                    <center><a href="http://127.0.0.1:8000/spupload/"><i class="fa-solid fa-circle-arrow-up" id="a"></i></a></center>
+                    <div class="card-body" >
+                      <center><h5 class="card-title">UPLOAD PRODUCT</h5></center>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-4">
+                <div class="card" id="c" style="width: 18rem;">
+                    <center><a href="http://127.0.0.1:8000/spedit/{{id}}"><i class="fa-solid fa-user-pen" id="e"></i></a></center>
+                    <div class="card-body">
+                      <center><h5 class="card-title">EDIT PROFILE</h5></center>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-md-4">
+                <div class="card" id="d" style="width: 18rem;">
+                    <center><a href="http://127.0.0.1:8000/spviewproduct/"><i class="fa-solid fa-eye" id="f"></i></a></center>
+                    <div class="card-body">
+                      <center><h5 class="card-title">VIEW PRODUCT</h5></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-top:300px">
+    {% include 'footer.html' %}
+</div>
+</body>
+</html>

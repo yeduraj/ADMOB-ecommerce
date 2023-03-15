@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+
+.body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #e6f9ff;
+  font-family: 'Roboto', sans-serif;
+}
+.shopping-cart {
+  width: 800px;
+  margin-left: 280px;
+  margin-bottom: 90px;
+  margin-top: 50px;
+  background: #b3ecff;
+<!--  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);-->
+  border-radius: 6px;
+  box-shadow:0px 5px 10px black;
+}
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+.delete-btn,
+.like-btn {
+  display: inline-block;
+  Cursor: pointer;
+}
+.delete-btn {
+  width: 18px;
+  height: 17px;
+  background: url(&amp;quot;delete-icn.svg&amp;quot;) no-repeat center;
+}
+
+.like-btn {
+  position: absolute;
+  top: 9px;
+  left: 15px;
+  background: url('twitter-heart.png');
+  width: 60px;
+  height: 60px;
+  background-size: 2900%;
+  background-repeat: no-repeat;
+}
+
+#img{
+  width:100px;
+  height:100px
+}
+
+.image {
+  margin-right: 50px;
+
+}
+
+.description {
+  padding-top: 10px;
+  margin-right: 40px;
+  width: 120px;
+<!--  padding-right:100px;-->
+}
+
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  #background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+
+button:focus,
+input:focus {
+  outline:0;
+}
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+#pr{
+    margin-left:50px;
+    color:black;
+    font-family:Arial;
+    font-weight: 400;
+}
+#buy1{
+    margin-left:80px;
+    width:70px;
+    height:40px;
+    margin-top:20px;
+}
+#title{
+    color:black;
+    font-family:Times New Roman;
+    font-size:30px;
+    }
+#nm{
+font-size:17px;
+}
+#row{
+margin-bottom:30px;
+}
+</style>
+    {% load static %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+{% include 'navbar1.html' %}
+</head>
+
+<div class="shopping-cart">
+  <div class="title" id="title">
+      <b>Shopping Bag</b>
+  </div>
+
+  <div class="row mt-3" >
+    {% for i,j,k,l,m in mylist %}
+    <div class="col-lg-12" id="row">
+        <div class="item">
+
+          <div class="buttons">
+<!--            <span class="delete-btn"><i class="fa-solid fa-xmark"></i></span>-->
+            <a href="http://127.0.0.1:8000/usrcartremove/{{j}}"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+          <div class="image">
+            <img src="{% static i %}" alt="" id="img">
+          </div>
+          <div class="description">
+            <span id="nm"><b>{{k}}</b></span>
+            <span>{{m}}</span>
+          </div>
+            <div class="total-price" id="pr"><b>₹ {{l}}</b></div>
+            <div>
+            </div>
+          <a href="http://127.0.0.1:8000/usrcartbuy/{{j}}"><input type="button"  value="BUY" id="buy1"></a>
+<!--          <input type="button"  value="BUY" id="buy">-->
+        </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% include 'footer.html' %}
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <div class="row mt-3">-->
+<!--        {% for i,j,k,l,m in mylist %}-->
+
+<!--        <div class="col-lg-3">-->
+<!--            <div class="card" style="width: 15rem; height:450px;">-->
+<!--                <img src="{% static i %}" class="card-img-top" alt="..." style="height:200px; width:240px;">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">{{k}}</h5>-->
+<!--                    <p class="card-text">Price:{{l}}</p>-->
+<!--                    <p class="card-text">{{m}}</p>-->
+<!--                    <a href="http://127.0.0.1:8000/usrbuy/{{j}}" class="btn" >Remove</a>-->
+<!--                    <a href="http://127.0.0.1:8000/usrbuy/{{j}}" class="btn" >Buy</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        {% endfor %}-->
+
+<!--</body>-->
