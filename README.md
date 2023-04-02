@@ -24,4 +24,22 @@ view product
 ![Screenshot (10)](https://user-images.githubusercontent.com/45625157/229366367-850e998e-b767-4ea2-bae2-b528cddd3cc3.png)
 
 
+user login
+
+![Screenshot (12)](https://user-images.githubusercontent.com/45625157/229366484-1feb950e-ad52-4e89-99dc-bb4e58359c6d.png)
+
+![Screenshot (13)](https://user-images.githubusercontent.com/45625157/229366487-87cfd32e-82ed-4480-abe8-e9d8cbcfa061.png)
+edit profile
+![Screenshot (14)](https://user-images.githubusercontent.com/45625157/229366492-615f970c-de03-49b7-b898-243f8ca49274.png)
+cart
+![Screenshot (15)](https://user-images.githubusercontent.com/45625157/229366494-566130e5-3055-452a-9955-80f235285d4c.png)
+buy item
+![Screenshot (16)](https://user-images.githubusercontent.com/45625157/229366496-bf8b5bb4-33cc-4d62-81f3-5775f546d903.png)
+order summary
+![Screenshot (17)](https://user-images.githubusercontent.com/45625157/229366497-7ca45ce1-6a99-41a8-bdfc-ea939fbebb47.png)
+
+![Screenshot (18)](https://user-images.githubusercontent.com/45625157/229366498-58c014b7-ec10-4238-97a9-fa5458bd94be.png)
+about us
+![Screenshot (19)](https://user-images.githubusercontent.com/45625157/229366499-45ee9707-8bb7-4df9-92bf-3f4f05d3e008.png)
+
 
