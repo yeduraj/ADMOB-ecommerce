@@ -19,3 +19,9 @@ upload product
 
 edit profile
 ![Screenshot (20)](https://user-images.githubusercontent.com/45625157/229366230-cdf9a7a6-9c2b-425a-a841-1e27e8931587.png)
+
+view product
+![Screenshot (10)](https://user-images.githubusercontent.com/45625157/229366367-850e998e-b767-4ea2-bae2-b528cddd3cc3.png)
+
+
+
