@@ -18,7 +18,7 @@ upload product
 ![Screenshot (8)](https://user-images.githubusercontent.com/45625157/229366186-c1b326f2-6c7a-497b-8f56-8b3cc7ab782e.png)
 
 edit profile
-![Screenshot (20)](https://user-images.githubusercontent.com/45625157/229366230-cdf9a7a6-9c2b-425a-a841-1e27e8931587.png)
+![Screenshot (21)](https://user-images.githubusercontent.com/45625157/229549153-1847287a-5d8b-4701-8550-b08277123b75.png)
 
 view product
 ![Screenshot (10)](https://user-images.githubusercontent.com/45625157/229366367-850e998e-b767-4ea2-bae2-b528cddd3cc3.png)
