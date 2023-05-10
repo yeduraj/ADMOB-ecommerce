@@ -31,13 +31,13 @@
 <body>
 {% include 'navbar.html' %}
     <div id="login">
-        <h3 class="text-center text-dark pt-5"> Shop Account Registration</h3>
+        <h3 class="text-center text-dark pt-5"> Edit Your Shop  Details</h3>
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form" action="" method="post">{% csrf_token %}
-                            <h3 class="text-center text-info">registration Form</h3>
+                            <h3 class="text-center text-info">Form</h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">Shop Name:</label><br>
                                 <input type="text" name="shopname" value="{{a.shopname}}"  class="form-control">
